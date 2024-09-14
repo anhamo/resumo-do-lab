@@ -7,3 +7,14 @@ Durante o lab aprendi:
 3. Os servicos que ele suporta como banco de dados, redes, suporte a varias linguagens de programacao, docker etc...
 
    Em suma: esta sendo uma experiencia marravilhosa.
+
+
+Beneficios da nuvem:
+1. Disponibilidade
+2. Escalabilidade
+3. Elasticidade
+4. Confiabilidade
+5. Previsibilidade
+6. Seguranca
+7. Governanca
+8. Gerenciabilidade
