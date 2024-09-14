@@ -18,3 +18,11 @@ Beneficios da nuvem:
 6. Seguranca
 7. Governanca
 8. Gerenciabilidade
+
+Tipos de servicos na Nuvem
+
+1. IaaS (Infraestrutura como servico) - e o servico de nuvem mais flexivel em que o usuario configura e gerencia o hardware para o seu aplicativo;
+2. Paas (Plataforma como servico) - focado no desenvolvimento de aplicativos. O gerenciamento da plataforma e realizado pelo provedor de nuvem;
+3. SaaS (Software como servico) - modelo de preco de pagamento conforme o uso: os usuarios pagam  pelo software que utilizam em modelo de assinatura.
+
+Nota: Nos tres tipos de nuvem descritos acima existe o modelo de responsabilidade compartilhada entre o provedor e usuario, porem sao diferentes por cada uma delas.
