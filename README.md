@@ -110,3 +110,57 @@ Opcoes de Gerenciamento de Arquivos
    - A camada de nuvem mantem os arquivos acessados com frequencia no local enquanto libera espaco.
   
 Importante referir que o nome do armazenamento deve ter de 3 a 24 caracteres em letras minusculas, isto e, nao aceita letras maiusculas nem caracteres especiais.
+
+Identidade, Acesso e Seguranca
+Microsoft Entra ID e o servico de gerenciamento de identidades e acesso baseado em nuvem do Microsoft Azure
+
+Responsabilidades
+- Autenticacao (os funcionarios entram para acessar recursos);
+- Logon unico (SSO);
+- Gerenciamento de aplicativos;
+- Negocios para negocios (B2B);
+- Gerenciamento de dispositivos.
+
+Benificios
+- obtenha os beneficios dos servicos de dominio baseados em nuvem sem gerenciar os controladores de dominio;
+- Execute aplicativos herdados (que nao podem utilizar padroes de autenticacao modernos) na nuvem;
+- Sincronizar automaticamente a partir do Microsoft Entra ID.
+
+  Autenticacao Vs Autorizacao
+  Autenticacao
+  - Identifica a pessoa ou servico buscando acesso a um recurso;
+  - Solicita credenciais de acesso legitimo;
+  - Base para criar principios  de identidade e controle de acesso seguros.
+ 
+    
+  Autorizacao
+  - Determina o nivel de acesso de uma pessoa ou servico autenticado.
+  - Define quais dados eles podem acessar e o que podem fazer com eles.
+ 
+  Autenticacao Multi factor (MFA)
+  - Fornece seguranca adicional para as identidades exigindo dois ou mais elementos para autenticacao completa.
+ 
+  Acesso Condicional
+  - Associacao de usuario ou grupo;
+  - Local do IP;
+  - Dispositivo;
+  - Aplicativo;
+  - Deteccao de risco
+
+  Controle de Acesso baseado em funcao (RBAC)
+  - Gerenciamento de acesso de granulidade fina;
+  - Divida as tarefas dentro da equipe e conceda somente a quantidade de acesso de que os usuarios precism para trabalhar;
+  - Habilite o acesso ao portal do Azure e o controle de acesso aos recursos.
+ 
+  Confianca Zero
+  * Protecao completa
+    - Seguranca fisica;
+    - Identidade fisica;
+    - Permetro;
+    - Rede;
+    - Computacao;
+    - Aplicativos; e
+    - Dados.
+     
+ 
+  
