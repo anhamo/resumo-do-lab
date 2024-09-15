@@ -56,6 +56,7 @@ Sao componentes como maquinas virtuais, contas de armazenamento, redes virtuais,
 
 Grupo de Recursos
 Grupo de recurso e um conteiner que voce usa para gerenciar e agregar recursos em uma unica unidade.
+
 Estes recursos podem existir em apenas unica unidade e podem existir em diferentes regioes.
 
 Assinaturas
@@ -63,3 +64,49 @@ Existem tres tipos de assinaturas diferentes no Azure que sao
 1. Assinatura de desenvolvimento;
 2. Assinatura de teste; e
 3. Assinatura de producao.
+
+Armazenamento
+Contas de armazenamento
+- Deve ter um globalmente nome exclusivo;
+- Fornecer acesso a internet;
+- Determinar os servicos de armazenamento e as opcoes de redundancias.
+
+Redundancia de Armazenamento
+- LRS: nao indicado para producao pois as 3 copias sao feitas no mesmo local;
+- ZRS: indicado para producao pois as copias sao feitas para tres zonas diferentes;
+- GRS: Para regioes diferentes;
+- GZRS: Para geografias diferentes.
+
+Formas de armazenamento
+1. Blob do Azure - otimizado para o armazenamento de quantidades massivas de dados nao estruturados.
+2. Disco do Azure - fornece discos para maquinas virtuias, aplicativos e outros servicos acessarem e utilizarem.
+3. Fila do Azure - servico de armazenamento de mensagens que fornece armazenamento e recuperacao para grandes quantidades de mensagens cada uma contendo ate 64KB.
+4. Arquivos do Azure - configura um compartilhamento de arquivos de rede altamente disponivel que pode ser utilizado usando o protocolo bloco de mensagens do servidor.
+5. Tabelas do Azure - fornece uma opcao de chave/atributo para o armazenamento de dados estruturados nao relacionais com um design sem esquema.
+
+Camadas de acesso de armazenamento do Azure
+1. Frequente - dados de acesso frequente;
+2. Esporadico - dados acessados com pouca frequencia (30 dias)
+3. Frio - dados acessados com pouca frequencia (90 dias)
+4. Arquivo morto - dados acessados raramente e armazenados pelo menos 180 dias com requisitos de latencia flexiveis.
+
+Migracoes para o Azure
+1. Azure data box - servico de migracao fisica que pode levar ate 80TB de dados;
+   - Proteje seus dados em uma caixa robusta durante o transito;
+   - Move os backups de recuperacao de desastre para o Azure.
+  
+Opcoes de Gerenciamento de Arquivos
+1. AzCopy
+   - Utilitario de linha de comando;
+   - Copiar blobs ou arquivos de ou para sua conta de armazenamento;
+   - Sincronizacao em uma direcao.
+  
+2. Gerenciador de Armazenamento do Azure
+   -Interface grafica do usuario (de modo semelhante ao windows explorer);
+   -Compativel com o windows, Mac OS e Linux.
+
+3. Sincronizacao de Arquivos
+   - Sincroniza os arquivos do azure e locais de forma biderecional;
+   - A camada de nuvem mantem os arquivos acessados com frequencia no local enquanto libera espaco.
+  
+Importante referir que o nome do armazenamento deve ter de 3 a 24 caracteres em letras minusculas, isto e, nao aceita letras maiusculas nem caracteres especiais.
