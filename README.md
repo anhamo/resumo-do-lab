@@ -163,4 +163,14 @@ Benificios
     - Dados.
      
  
-  
+A confianca zero e:
+- Uma abordagem completa para proteger sistemas de computador;
+- Fornecer varios niveis de protecao;
+- Ataques contra uma camada sao isolados das camadas subsequentes.
+
+Microsoft Defender for Cloud
+- E um servico de monitoramento que fornece protecao contra ameacas nos datacenters do Azure e locais.
+- Fornece recomendacoes seguras;
+- Detectar e bloquear malware;
+- Analisar e identificar ataques potenciais;
+- Controle de acesso just-in-time para portas.
