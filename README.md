@@ -174,3 +174,15 @@ Microsoft Defender for Cloud
 - Detectar e bloquear malware;
 - Analisar e identificar ataques potenciais;
 - Controle de acesso just-in-time para portas.
+
+Gerenciamento e Governanca
+Factores que afectam os custos:
+1. Tipo de recurso - os custos sao especificos de recurso, portanto, o uso de um medidor rastreia o numero de medidores associados a um recurso, dependendo do tipo de recurso.
+2. Consumo - com um modelo pago conforme o uso, o consumo é um dos maiores geradores de custos.
+3. Manutencao - monitorar seu volume no Azure e manter seu ambiente pode ajudá-lo a identificar e reduzir os custos que sao necessarios, como ao desligar maquinas virtuais subutilizadas.
+4. Area geografica - o mesmo tipo de recurso pode custar valores diferentes dependendo da area geografica, o que afecta os custos do Azure.
+5. Trafego de rede - embora algumas transferencias de dados de entrada sejam gratuitas, o custo para dados de saida ou dados entre recursos do Azure é afectado por zonas de cobrança.
+6. Assinatura - o tipo e a configuracao da assinatura também podem afectar o custo. Por exemplo: a avaliacao gratuita permite explorar alguns recursos do Azure gratuitamente.
+
+Azure Marketplace
+- O Azure marketplace permite que os clientes encontrem, experimentem, comprem e provisionem aplicativos e serviços de centenas de provedores de serviços lideres, que sao todos certificados para execuçao do Azure.
