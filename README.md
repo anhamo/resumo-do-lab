@@ -186,3 +186,33 @@ Factores que afectam os custos:
 
 Azure Marketplace
 - O Azure marketplace permite que os clientes encontrem, experimentem, comprem e provisionem aplicativos e serviços de centenas de provedores de serviços lideres, que sao todos certificados para execuçao do Azure.
+
+Governanca e Conformidade
+- Blueprints, politicas e bloqueios de recursos;
+- Portal de confianca do servico.
+
+Azure Policy
+O Azure Policy ajuda a impor padroes organizacionais e a avaliar a conformidade em escala.
+- Ele fornece governanca e consistencia de recursos com conformidade regulatoria, seguranca, custo e gerenciamento.
+- Avalia e identifica os recursos do Azure que nao atendem as suas politicas;
+- Fornece definicoes de politicas e iniciativas integradas, em categorias como armazenamento, rede, computacao, central de seguranca e monitoramento.
+
+Bloqueios de recursos
+- Protege os recursos do Azure de exclusao ou modificacao acidental;
+- Gerenciar bloqueios na assinatura, grupo de recursos ou niveis de recursos individuais dentro do portal do Azure.
+
+Tipos de bloqueio
+Tipos de bloqueio      Ler      Actualizar      Excluir
+Excluir                Sim      Sim             Nao
+ReadOnly               Sim      Nao             Nao
+
+Portal de confianca de servico
+- Fornece regras e protocolos que a microsoft segue.
+
+Microsoft Purview
+E uma familia de solucoes de governanca, risco e conformidade de dados que ajuda voce a obter uma unica exibicao unificada em seus dados.
+O Microsoft Purview reune insights sobre seus dados locais, multinuvem e de software como servico (SaaS).
+
+Faz com que a descoberta de dados seja automatizada;
+Classificacao de dados confidenciais;
+Linhagem de dados de ponta a ponta.
