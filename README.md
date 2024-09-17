@@ -254,3 +254,17 @@ O Microsoft Purview reune insights sobre seus dados locais, multinuvem e de soft
 Faz com que a descoberta de dados seja automatizada;
 Classificacao de dados confidenciais;
 Linhagem de dados de ponta a ponta.
+
+
+Ferramentas de Monitoramento
+- Assistente do Azure: analisa recursos implantados do Azure e faz recomendacoes com base nas praticas recomendadas para optimizar as implantacoes do Azure baseados em confiabilidade, seguranca, desempenho, custo e excelencia operacional.
+
+- Integridade do servico do Azure: e' uma colecao de servicos que mantem voce informado sobre status geral do Azure, status de servicos que podem afectar voce e o status de recurso especifico que esta afectando voce.
+
+- Status do Azure: visao global da integridade de todos os servicos do Azure em todas as regioes do Azure.
+
+- Integridade do servico: exibicao focada apenas nos servicos e regioes que voce esta usando. Se um servico estiver enfrentando um problema em uma regiao que voce nao esta usando, ele nao aparecera aqui.
+
+- Resource Health: exibicao personalizada dos recursos reias do Azure. Ele fornece informacoes sobre integridade de seus recursos de nuvem individuais.
+
+- Azure Monitor: Maximiza a disponibilidade e o desempenho de aplicativos e servicos colectando, analisando e tomando decisoes com base na telemetria da nuvem e de ambientes locais.
