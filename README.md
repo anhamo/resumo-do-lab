@@ -209,6 +209,44 @@ ReadOnly               Sim      Nao             Nao
 Portal de confianca de servico
 - Fornece regras e protocolos que a microsoft segue.
 
+Ferramentas de Gerenciamento e Implantacao
+Ferramentas de gerenciamento de recursos
+- Portal, PowerShell, CLI e outros;
+- Azure Arc e Azure Resource Manager (ARM).
+
+Ferramentas para interragir com o Azure 
+- Portal do Azure;
+- Azure PowerShell;
+- Azure Cloud Shell;
+- CLI (Command line interface);
+
+Azure Arc
+E uma ferramenta nos moldes de multicloud, facilita o gerenciamento de recursos que nao estao dentro do Azure. Exemplo: Ambiente Onpremise, AWS e GCP rodando um script para tal.
+
+O Azure Arc serve para administrar o que esta fora do Azure.
+
+Azure Resource Manager (ARM)
+FOrnece uma camada de gerenciamento que permite criar, actualizar e excluir recursos na assinatura do Azure.
+
+Infraestrura como codigo
+- Garanta consistencia na implantacao em todo o ecossistema de nuvem;
+- Gerencie a configuracao em escala;
+- Provisione rapidamente ambientes adicionais com base em uma configuracao e um build padrao.
+
+Modelos ARM
+Sao arquivos JSON (JavaScript Object Notation) que podem ser usados para criar e implantar a infraestrutura do Azure sem a necessidade de escrever comandos de programacao.
+
+Pre-requisitos
+- Sintax declarativa;
+- Resultados repetitivos;
+- Orquestracao;
+- Arquivos modulares;
+- Validacao integrada;
+- Codigo exportavel.
+
+Azure Bicep
+E uma linguagem nativa do MS Azure para criar recursos para automatizacao e serve so para a Microsft.
+
 Microsoft Purview
 E uma familia de solucoes de governanca, risco e conformidade de dados que ajuda voce a obter uma unica exibicao unificada em seus dados.
 O Microsoft Purview reune insights sobre seus dados locais, multinuvem e de software como servico (SaaS).
