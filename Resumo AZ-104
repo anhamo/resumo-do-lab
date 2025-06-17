@@ -1,0 +1,96 @@
+A administração de redes virtuais no Azure envolve a configuração, gerenciamento e segurança de infraestruturas de rede na nuvem. Aqui estão alguns aspectos essenciais:
+1. Configuração de Redes Virtuais
+•	Criar e gerenciar redes virtuais (VNet) para conectar recursos no Azure.
+•	Definir sub-redes para segmentação e controle de tráfego.
+•	Configurar endereçamento IP adequado para evitar conflitos e permitir escalabilidade.
+2. Segurança e Controle de Acesso
+•	Implementar Grupos de Segurança de Rede (NSG) para filtrar tráfego de entrada e saída.
+•	Utilizar Azure Firewall e DDoS Protection para proteção contra ataques.
+•	Aplicar políticas de segurança organizacionais com regras de administração.
+3. Conectividade e Integração
+•	Estabelecer peering entre VNets para comunicação eficiente entre redes.
+•	Configurar VPNs ou ExpressRoute para conexões seguras entre ambientes locais e a nuvem.
+•	Gerenciar topologias de rede complexas como hub-and-spoke para melhor organização.
+4. Automação e Monitoramento
+•	Usar o Azure Virtual Network Manager para administração centralizada.
+•	Monitorar tráfego e desempenho com Azure Monitor e Network Watcher.
+•	Automatizar configurações com Azure CLI, PowerShell ou Terraform
+
+NSG vs ASG
+No Azure, os Network Security Groups (NSG) e Application Security Groups (ASG) são usados para gerenciar a segurança da rede, mas têm propósitos distintos:
+Network Security Group (NSG)
+•	Filtra tráfego de rede dentro de uma VNet, permitindo ou bloqueando conexões com base em regras.
+•	Pode ser aplicado a subnets ou interfaces de rede de máquinas virtuais.
+•	As regras do NSG são baseadas em endereço IP, porta e protocolo.
+•	Exemplo de uso: Bloquear tráfego externo para um servidor de banco de dados.
+Application Security Group (ASG)
+•	Agrupa máquinas virtuais logicamente, permitindo aplicar regras de segurança sem depender de endereços IP.
+•	Facilita a gestão de políticas de segurança para aplicações distribuídas.
+•	ASGs são usados dentro de NSGs, tornando a configuração mais flexível.
+•	Exemplo de uso: Criar um grupo de servidores web e aplicar regras de segurança a todos eles de forma centralizada.
+Em resumo, NSG controla o tráfego de rede, enquanto ASG organiza recursos para facilitar a aplicação de regras
+
+Administração de conectividade no Azure
+A administração da conectividade entre sites no Azure envolve a configuração de redes distribuídas para garantir comunicação eficiente e segura entre diferentes locais. Aqui estão alguns aspectos essenciais:
+1. Métodos de Conectividade
+•	VPN Site-to-Site – Conecta redes locais ao Azure por meio de túneis criptografados.
+•	ExpressRoute – Oferece conectividade privada entre data centers locais e o Azure, com baixa latência e alta confiabilidade.
+•	Emparelhamento de VNet – Permite que redes virtuais no Azure se comuniquem diretamente, sem necessidade de VPNs.
+2. Gerenciamento e Segurança
+•	Azure Virtual Network Manager – Facilita a administração centralizada de redes virtuais e suas conexões.
+•	Firewalls e NSGs – Protegem contra acessos não autorizados e ataques externos.
+•	Monitoramento de tráfego – Ferramentas como Azure Monitor e Network Watcher ajudam a acompanhar o desempenho e detectar falhas.
+3. Topologias de Rede
+•	Hub-and-Spoke – Centraliza a conectividade em uma VNet principal (hub), conectando VNets secundárias (spokes).
+•	Malha Global – Permite comunicação direta entre redes virtuais em diferentes regiões do Azure.
+
+
+
+
+
+O Gateway de Aplicativo do Azure é um serviço de balanceamento de carga de camada 7 (aplicação) que gerência o tráfego de entrada para seus aplicativos web com base em atributos HTTP, como URL, cabeçalhos e cookies.
+Principais Recursos
+•	Roteamento baseado em URL e host – Direciona o tráfego para diferentes back-ends com base no caminho da URL ou domínio.
+•	Firewall de Aplicativo Web (WAF) – Protege contra ameaças como injeção de SQL e XSS.
+•	Descarregamento SSL – Gerencia certificados e reduz a carga de criptografia nos servidores.
+•	Afinidade de sessão – Mantém sessões de usuários com base em cookies.
+•	Escalabilidade automática – Ajusta a capacidade conforme a demanda do tráfego.
+Quando usar
+•	Quando você precisa de roteamento inteligente para múltiplos aplicativos em um mesmo IP.
+•	Para proteger seus aplicativos com WAF integrado.
+•	Quando deseja gerenciar certificados SSL de forma centralizada.
+•	Para criar front-ends altamente disponíveis e seguros.
+
+LRS
+O armazenamento com redundância local (LRS) no Azure é um modelo de replicação de dados que copia seus dados três vezes dentro de um único datacenter na região primária. Essa opção protege contra falhas de hardware e interrupções locais, mas não contra desastres regionais. É a alternativa mais econômica, mas pode não ser ideal para aplicativos que exigem alta disponibilidade. Se precisar de maior proteção, o Azure oferece outras opções como ZRS (redundância de zona) e GRS (redundância geográfica).
+
+Today
+O que e' modelo de armazenamento lrs no azure
+O armazenamento com redundância local (LRS) no Azure é um modelo de replicação de dados que copia seus dados três vezes dentro de um único datacenter na região primária. Essa opção protege contra falhas de hardware e interrupções locais, mas não contra desastres regionais. É a alternativa mais econômica, mas pode não ser ideal para aplicativos que exigem alta disponibilidade. Se precisar de maior proteção, o Azure oferece outras opções como ZRS (redundância de zona) e GRS (redundância geográfica).
+ZRS
+O armazenamento com redundância de zona (ZRS) no Azure replica seus dados sincronamente em três zonas de disponibilidade dentro de uma mesma região. Isso significa que, mesmo que uma zona falhe devido a um desastre natural ou problema de hardware, seus dados ainda estarão acessíveis nas outras zonas. O ZRS é ideal para aplicativos que exigem alta disponibilidade e resiliência contra falhas zonais. No entanto, ele não protege contra falhas regionais, como o GRS (redundância geográfica) faz.
+
+O armazenamento com redundância geográfica (GRS) no Azure copia seus dados três vezes dentro de uma única região primária e, depois, os replica assíncronamente para uma região secundária distante. Isso protege contra falhas regionais, garantindo que seus dados permaneçam acessíveis mesmo em caso de desastres. No entanto, o acesso à região secundária só ocorre após um failover manual.
+
+
+
+
+
+
+
+
+
+O Azure Network Watcher é uma ferramenta poderosa para monitorar, diagnosticar e solucionar problemas de rede em ambientes Azure. Ele oferece visibilidade detalhada sobre o tráfego e a conectividade entre recursos, sem a necessidade de acessar diretamente as máquinas virtuais.
+Principais Funcionalidades
+•	Monitoramento de Conectividade – Verifica se VMs, gateways e balanceadores de carga conseguem se comunicar corretamente.
+•	Captura de Pacotes – Permite capturar tráfego de rede em tempo real para análise detalhada.
+•	Logs de Fluxo de NSG – Registra o tráfego permitido e bloqueado pelas regras dos Network Security Groups.
+•	Visualização de Topologia – Gera um mapa visual da arquitetura de rede, facilitando a identificação de falhas ou conexões inesperadas.
+•	Diagnóstico de VPN – Ajuda a identificar e resolver problemas de conectividade em túneis VPN.
+•	Connection Monitor – Testa e acompanha a conectividade entre pontos de rede ao longo do tempo.
+Como Ativar
+O Network Watcher é ativado por região. No portal do Azure:
+1.	Pesquise por Network Watcher.
+2.	Selecione sua assinatura e a região desejada.
+3.	Clique em “+ Criar” para ativar o serviço naquela região.
+
